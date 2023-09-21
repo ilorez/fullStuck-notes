@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href=""> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./000_bootstrap/css/bootstrap.min.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="d-flex flex-column gap-5 container">
+        <form method="dialog" action="#" class="container w-50 mt-4 p-3 bg-light rounded-3 shadow-lg">
+            <!-- nom -->
+            <div class=" form-group">
+                <label for="nom" class="col-form-label">Nom : </label>
+                <input type="text" name="nom" id="nom" require placeholder="nom" class="form-control" />
+            </div>
+            <!-- prenom -->
+            <div class="form-group">
+                <label for="prenom" class="col-form-label">Prenom : </label>
+                <input type="text" name="prenom" id="prenom" require placeholder="prenom" class="form-control" />
+
+            </div>
+            <!-- age -->
+            <div class="form-group">
+                <label for="age" class="col-form-label">Age : </label>
+                <input type="number" name="age" id="age" require placeholder="age" class="form-control" />
+            </div>
+            <!-- Niveau -->
+            <div class="form-group">
+                <label for="niveau" class="col-form-label">Niveau : </label>
+                <!-- <input type="number" name="niveau" id="niveau" require placeholder="niveau" class="form-control" /> -->
+                <select name="niveau" id="niveau" class="form-select">
+                    <option value="etudiant" selected>Etudiant</option>
+                    <option value="licence">Licence</option>
+                    <option value="master">Master</option>
+                </select>
+            </div>
+            <!-- specialite  -->
+            <div class="hidden form-group" id="licenceInp">
+                <label for="specialite" class="col-form-label">Specialite : </label>
+                <input type="text" name="specialite" id="specialite" require placeholder="specialite"
+                    class="form-control" />
+            </div>
+            <!-- domaine  -->
+            <div class="hidden form-group" id="masterInp">
+                <label for="domaine" class="col-form-label">Domaine : </label>
+                <input type="text" name="domaine" id="domaine" require placeholder="domaine" class="form-control" />
+            </div>
+            <div class="d-flex flex-row justify-content-between mt-2">
+                <div></div>
+                <div>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                    <button type="submit" id="btnSub" class="btn btn-primary ">submit</button>
+                </div>
+            </div>
+        </form>
+        <table class="table table-striped table-dark text-center">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prenom</th>
+                    <th>Age</th>
+                    <th>Niveau</th>
+                    <th>Specialite</th>
+                    <th>Domaine</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
