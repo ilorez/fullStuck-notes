@@ -1,0 +1,28 @@
+# Node.js
+node_modules/
+
+# Output of build tools
+dist/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Tailwind CSS build output
+/public/css/
+
+# Tailwind CSS configuration (if using a custom location)
+tailwind.config.js
+
+# Visual Studio Code directory (if using VS Code)
+.vscode/
+
+# JetBrains IDEs directory (if using WebStorm, IntelliJ IDEA, etc.)
+.idea/
+
+# npm debug log
+npm-debug.log*
+
+# Yarn log
+yarn-debug.log*
+yarn-error.log*
