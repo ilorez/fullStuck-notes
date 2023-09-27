@@ -1,12 +1,14 @@
 {
-    "Etudiants": [
+    "master": [
         {
             "nom": "najdoui",
             "prenom": "zobair",
             "age": 18,
             "niveau": "master",
             "domaine": "dev"
-        },
+        }
+    ],
+    "licence": [
         {
             "nom": "najdoui",
             "prenom": "zobair",
