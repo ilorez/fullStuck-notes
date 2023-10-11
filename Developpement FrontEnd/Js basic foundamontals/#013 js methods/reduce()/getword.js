@@ -1,5 +1,8 @@
-const caracters = ["w", "#", "o", "r", "5", "d"]
+const caracters = ["W", "#", "o", "r", "5", "d", ""]
 
-const getWord = (tab) => tab.reduce((word, c) => /[a-zA-Z]/.test(c) ? word + c : word, "")
+const getWord = (tab) => {
+    word = tab.reduce((word, c) => /[a-zA-Z]/.test(c) ? word + c : word, "")
+    return word === "" ? "le tableu ne contient aucun mot valide" : word
+}
 console.log(getWord(caracters))
 
