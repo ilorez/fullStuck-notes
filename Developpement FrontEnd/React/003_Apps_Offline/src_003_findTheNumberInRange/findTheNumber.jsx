@@ -7,7 +7,7 @@ export default class JeuDevinettes extends React.Component {
         this.state = { nombreADeviner: Math.floor(Math.random() * 100) + 1, essais: 20, tentaive: 0, message: 'give me a number between 1 and 100', userNum: null, end: false, max: 100, min: 1 }
     }
     inisialise() {
-        this.setState({ nombreADeviner: Math.floor(Math.random() * 101), essais: 20, tentaive: 0, message: 'give me a number between 1 and 100', userNum: null, end: false })
+        this.setState({ nombreADeviner: Math.floor(Math.random() * 100) + 1, essais: 20, tentaive: 0, message: 'give me a number between 1 and 100', userNum: null, end: false })
     }
     attempt(num) {
         if (this.lastNum === num) {
@@ -34,7 +34,7 @@ export default class JeuDevinettes extends React.Component {
                 {
                     this.state.end ? this.state.message === "correct" ?
                         <div className="flex flex-col gap-3">
-                            <p>You Founed it Greate Do you want play again</p>
+                            <p>You Founed it in {this.state.tentaive} trys Greate Do you want play again</p>
                             <button type="button" onClick={() => this.inisialise()} className="px-4 py-2 bg-slate-400 rounded-lg hover:bg-slate-300">Play again</button>
                         </div>
                         :
