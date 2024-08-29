@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+// eslint-disable-next-line react/prop-types
 function Product({ title, price, imgSrc }) {
   return (
     <div>
